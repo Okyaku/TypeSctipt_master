@@ -1,0 +1,11 @@
+import { definePrismaConfig } from "prisma/config";
+
+export default definePrismaConfig({
+  skills: { agents: ["claude", "cursor", "agents", "devin"] },
+  // ここに orm の設定を追加する
+  orm: {
+    adapter: {},
+    family: {},
+    target: {},
+  },
+});
